@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $primary-color;
+}
+.logo{
+    color: $primary-color;
+}
+a{
+    color: terciary-color;
+    text-decoration: none;
+}
+
+h2{
+    color: $primary-color;
+    font-weight: bolder;
+    font-size: size(6);
+}
+h3{
+    color: $primary-color;
+    font-weight: lighter;
+    font-size: size(3);
+}
+.texto{
+    color: $primary-color;
+}
+.container-inferior{
+    background-color: $primary-color;
+    margin: 100px auto;
+    width: 1520px;
+    height: 2100px;
+    padding: 50px;
+    box-shadow: 0 0 20px 2px $secondary-color;
+
+    background-image: url(/assets/img/fondoinferior.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+  @include small-screen {
+    .container-inferior{
+        padding: 5px;
+    }
+  }
+
+  @include medium-screen {
+    .container-inferior {
+        padding: 10px;
+  }
+
+  @include large-screen {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+}
+
+.photo {
+    width: $photo-size;
+    height: $photo-size;
+  }
+  
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    li{
+        a{
+            @include btn($background-color: $primary-color,
+                         $color: $secondary-color,
+                         $bold: "true" );
+         &:hover{
+            @include btn($terciary-color, $secondary-color, "false");
+            box-shadow: $box-shadow;
+         }   
+        }
+    }
+}
+
+header{
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.prices{
+    .prev{
+        font-size: size(2);
+        font-weight: bolder;
+        color: $font-color;
+        text-decoration: line-through;
+        .now{
+            a{
+                color: $terciary-color;
+            }
+            font-size: size(5);
+            font-weight: bolder;
+
+        }
+    }
+}
+.prices{
+    color: $primary-color;
+    font-weight: bolder;
+}
+
+.productos{
+    
+    margin-top: 200px;
+}
+.pruductos2{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}  
+.comprar{
+    margin-top: 30px;
+}
+.navbar .collapse.navbar-collapse{
+    flex-grow: inherit;
+}
+.navbar a{
+    color: #ffffff;
+}
+.navbar .navbar-toggler{
+    border-color: #ffffff;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.tittlepag{
+	font-size: 56px;
+}
+.tittlep{
+	font-size: 24px;
+}
+.header__content{
+	height: calc(100vh - 56px);
+}
+.footer__content{
+    background-color: $primary-color;
+}

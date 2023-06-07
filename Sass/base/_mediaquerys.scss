@@ -1,0 +1,25 @@
+@media (min_width: 1400px) {
+    nav, .container, .footer-content{
+        width: 60%;
+        margin: auto;
+    }
+    
+}
+
+
+@media (max-width: 992px) {
+
+}
+@media (min_width: 576px){
+    .header__img{
+		width: auto;
+		height: auto;
+		object-fit: cover;
+	}
+	.img-fluid{
+		width: auto;
+		height: auto;
+		object-fit: cover;
+	}
+
+}
